@@ -1,1 +1,7 @@
-./Assets
+# Default exclusions for all Godot projects
+icon.png
+addons/
+.import/
+export_presets.cfg
+.mono/
+
