@@ -12,51 +12,27 @@ _global_script_classes=[ {
 "base": "KinematicBody2D",
 "class": "Character",
 "language": "GDScript",
-"path": "res://src/Character/player.gd"
-}, {
-"base": "HBoxContainer",
-"class": "ContributorClass",
-"language": "GDScript",
-"path": "res://addons/github-integration/scripts/ContributorClass.gd"
+"path": "res://src/Characters/player.gd"
 }, {
 "base": "Node",
 "class": "FiniteStateMachine",
 "language": "GDScript",
-"path": "res://src/Character/fstm.gd"
+"path": "res://src/Characters/fstm.gd"
 }, {
-"base": "PanelContainer",
-"class": "GistItem",
-"language": "GDScript",
-"path": "res://addons/github-integration/scripts/GistItem.gd"
-}, {
-"base": "EditorVCSInterface",
+"base": "",
 "class": "GitAPI",
 "language": "NativeScript",
-"path": "res://godot-git-plugin-v1.2.3/addons/godot-git-plugin/git_api.gdns"
-}, {
-"base": "HBoxContainer",
-"class": "InvitationItem",
-"language": "GDScript",
-"path": "res://addons/github-integration/scripts/InvitationItem.gd"
-}, {
-"base": "PanelContainer",
-"class": "RepositoryItem",
-"language": "GDScript",
-"path": "res://addons/github-integration/scripts/RepositoryItem.gd"
+"path": "res://addons/godot-git-plugin/git_api.gdns"
 } ]
 _global_script_class_icons={
 "Character": "res://Art_Assets/dungeon rpg pack/0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f0.png",
-"ContributorClass": "",
 "FiniteStateMachine": "",
-"GistItem": "",
-"GitAPI": "",
-"InvitationItem": "",
-"RepositoryItem": ""
+"GitAPI": ""
 }
 
 [application]
 
-config/name="Project"
+config/name="Unnamed Action RPG"
 run/main_scene="res://src/Node2D.tscn"
 config/icon="res://icon.png"
 
@@ -80,11 +56,11 @@ window/stretch/aspect="keep"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/github-integration/plugin.cfg", "res://addons/godot-git-control.funabab/plugin.cfg" )
+enabled=PoolStringArray(  )
 
 [gdnative]
 
-singletons=[ "res://addons/godot-git-plugin/git_api.gdnlib", "res://godot-git-plugin-v1.2.3/addons/godot-git-plugin/git_api.gdnlib" ]
+singletons=[ "res://addons/godot-git-plugin/git_api.gdnlib" ]
 
 [input]
 
