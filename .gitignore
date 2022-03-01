@@ -1,5 +1,6 @@
 # Default exclusions for all Godot projects
 icon.png
+icon.png.import
 addons/
 .import/
 export_presets.cfg
