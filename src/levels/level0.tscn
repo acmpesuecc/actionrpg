@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Art_Assets/dungeon rpg pack/0x72_DungeonTilesetII_v1.4/frames/floor_1.png" type="Texture" id=1]
-[ext_resource path="res://src/Character/player/player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/Node2D.gd" type="Script" id=3]
+[ext_resource path="res://assets/environment/floor_1.png" type="Texture" id=1]
+[ext_resource path="res://src/character/player/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/levels/level0.gd" type="Script" id=3]
 
 [sub_resource type="TileSet" id=1]
 0/name = "floor_1.png 0"
@@ -20,7 +20,7 @@
 0/shapes = [  ]
 0/z_index = 0
 
-[node name="Node2D" type="Node2D"]
+[node name="level0" type="Node2D"]
 script = ExtResource( 3 )
 
 [node name="TileMap" type="TileMap" parent="."]
