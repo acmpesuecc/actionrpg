@@ -1,6 +1,6 @@
 extends Character
 
-onready var sword: Node2D = get_node("Sword")
+onready var sword: Node2D = get_node("sword")
 onready var sword_animation: AnimationPlayer = sword.get_node("SwordAnimationPlayer")
 func _process(_delta: float) -> void: 
 	

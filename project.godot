@@ -12,12 +12,7 @@ _global_script_classes=[ {
 "base": "KinematicBody2D",
 "class": "Character",
 "language": "GDScript",
-"path": "res://src/Characters/player.gd"
-}, {
-"base": "Node",
-"class": "FiniteStateMachine",
-"language": "GDScript",
-"path": "res://src/Characters/fstm.gd"
+"path": "res://src/character/player.gd"
 }, {
 "base": "",
 "class": "GitAPI",
@@ -25,23 +20,15 @@ _global_script_classes=[ {
 "path": "res://addons/godot-git-plugin/git_api.gdns"
 } ]
 _global_script_class_icons={
-"Character": "res://Art_Assets/dungeon rpg pack/0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f0.png",
-"FiniteStateMachine": "",
+"Character": "",
 "GitAPI": ""
 }
 
 [application]
 
 config/name="Unnamed Action RPG"
-run/main_scene="res://src/Node2D.tscn"
+run/main_scene="res://src/levels/level0.tscn"
 config/icon="res://icon.png"
-
-[autoload]
-
-PluginSettings="*res://addons/github-integration/scripts/PluginSettings.gd"
-IconLoaderGithub="*res://addons/github-integration/scripts/IconLoaderGithub.gd"
-UserData="*res://addons/github-integration/scripts/user_data.gd"
-RestHandler="*res://addons/github-integration/scenes/RestHandler.tscn"
 
 [display]
 
@@ -49,7 +36,7 @@ window/size/width=480
 window/size/height=270
 window/size/test_width=1280
 window/size/test_height=720
-mouse_cursor/custom_image="res://Art_Assets/ui (new)/crosshair_1.png"
+mouse_cursor/custom_image="res://assets/ui/crosshair_1.png"
 mouse_cursor/custom_image_hotspot=Vector2( 8, 8 )
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
@@ -61,6 +48,30 @@ enabled=PoolStringArray(  )
 [gdnative]
 
 singletons=[ "res://addons/godot-git-plugin/git_api.gdnlib" ]
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 0,
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d": false,
+"flags/anisotropic": false,
+"flags/filter": false,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/invert_color": false,
+"process/normal_map_invert_y": false,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
 
 [input]
 
