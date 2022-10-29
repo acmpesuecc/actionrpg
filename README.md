@@ -4,6 +4,11 @@
 soundtrack and beautiful retro artwork.
 - A game with fun combat mechanism, quests, and exciting places to visit, an
 engaging story and much more. 
+
+## Screenshots
+
+![Screenshot](screenshots/screenshot.png)
+
 ---
 ### git-lfs
 
